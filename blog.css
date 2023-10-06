@@ -1,0 +1,88 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: yellow;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.blog-post {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    overflow: hidden;
+    width: calc(33.33% - 2rem);
+    transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.blog-post a {
+    display: block;
+    background-color: #333;
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem;
+margin-top: 3px;
+    transition: background-color 0.2s ease;
+}
+
+.blog-post a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: yellow;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .blog-post {
+        width: 100%;
+    }
+}

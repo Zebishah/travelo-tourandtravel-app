@@ -145,28 +145,7 @@ html {
   color: white;
 }
 
-.search-bar {
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0 1rem 2rem #2d2f31;
-  justify-content: end;
-  align-items: end;
-  width: 20vw;
-  position: relative;
-
-  background: none;
-  z-index: 2;
-  top: -16rem;
-  margin-left: auto;
-  transition: all 0.9s ease-in-out;
-}
-
-.search-bar .btns {
-  display: flex;
-  flex-direction: row;
-  gap: 0.3rem;
-
-}
+ 
 
 .btns input {
   cursor: pointer;
@@ -177,26 +156,7 @@ html {
   color: yellow;
   background-color: #2d2f31;
 }
-
-.search-bar.active {
-  position: relative;
-  top: -11rem;
-}
-
-.search-bar input {
-  padding: 8px;
-
-  outline: none;
-  border: 1px solid yellow;
-  background-color: #2f3031;
-  color: yellow;
-}
-
-.search-bar .s-btn {
-  background-color: yellow;
-  color: #2d2f31;
-  font-family: 'Russo One', sans-serif !important;
-}
+ 
 
 /* landing page css */
 .main .landpage {
@@ -205,11 +165,12 @@ html {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 38.7rem;
+  height:39rem;
   z-index: 2;
   object-fit: cover;
   background-size: cover;
   background-position: center;
+
   background-image: url("image/bg12.jpg");
 }
 
@@ -1142,17 +1103,16 @@ hr {
 
 /* breakpoints for responsiveness */
 @media (max-width:2000px) {
-  .search-bar.active {
-    position: relative;
-    top: -9rem;
+ 
+
+  .main .landpage{
+    height: 100vh;
   }
+
 }
 
 @media (max-width:1200px) {
-  .search-bar.active {
-    position: relative;
-    top: -9rem;
-  }
+  
 
   html {
     overflow-x: hidden;
@@ -1185,13 +1145,14 @@ hr {
   .footer .box-container .box p {
     font-size: 13px;
   }
+   .main .landpage{
+    height: 100vh;
+  }
+
 }
 
 @media (max-width:1050px) {
-  .search-bar.active {
-    position: relative;
-    top: -10rem;
-  }
+
 
   .nav-r {
     width: 100vw;
@@ -1320,6 +1281,10 @@ hr {
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
+   .main .landpage{
+    height: 100vh;
+  }
+
 }
 
 @media (max-width:875px) {
@@ -1328,10 +1293,6 @@ hr {
   }
     .nav-r .logo span{
     font-size: 25px;
-  }
-  .search-bar.active {
-    position: relative;
-    top: -10rem;
   }
 
   .packages {
@@ -1393,9 +1354,15 @@ hr {
   .icons i {
     font-size: 2vw;
   }
+   .main .landpage{
+    height: 100vh;
+  }
+  
 }
 
 @media (max-width:700px) {
+
+ 
   .main .landpage .contents h3 {
     font-size: 37px;
   }
@@ -1471,6 +1438,13 @@ hr {
   .icons .fa-user {
     position: relative;
     top: -2px;
+  }
+   .icons .fa-blog {
+    position: relative;
+    top: -2px;
+  }
+  .icons i{
+font-size: 20px;
   }
 
   .packages .box-container .box {
@@ -1652,9 +1626,23 @@ hr {
   .footer .credit {
     font-size: 23px;
   }
+    .navbar a {
+    font-size: 14.5px;
+  }
+ .main .landpage{
+    height: 100vh;
+  }
+ 
 }
 
 @media (max-width:500px) {
+   .icons .fa-blog {
+    position: relative;
+    top: -2px;
+  }
+  .icons i{
+font-size: 20px;
+  }
 
   .book .row .image img {
     display: none;
@@ -1675,11 +1663,7 @@ hr {
     width: 70vw;
   }
 
-  .search-bar {
-    width: 20vw;
-    top: -16rem;
-
-  }
+ 
 
   .footer .credit {
     font-size: 1px;
@@ -1705,4 +1689,155 @@ hr {
     top: 13px;
 
   }
+  .heading{
+    font-size: 12px;
+    padding: 4px;
+  }
+
+.icons a
+{
+font-size: 11px;
+margin-top: 4px;
+}.icons i{
+  font-size: 14px;
+}
+ .main .landpage{
+    height: 100vh;
+  }
+}
+@media (max-width:420px)
+{
+     .icons .fa-blog {
+    position: relative;
+    top: -2px;
+  }
+  .icons i{
+font-size: 22px;
+  }
+
+    .gallery .box-container .box .content h3 {
+    font-size: 13px;
+  }
+
+  .gallery .box-container .box .content p {
+    font-size: 11px;
+  }
+ .gallery .box-container .box{
+    gap: 1rem;
+    padding: 8px;
+    display: flex;
+    width: 45%;
+ }
+  .gallery .box-container .box .content {
+    gap: 0.5rem;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 83%;
+    height: 81%;
+    margin-left: 8px;
+    top: 13px;
+
+  }
+   .packages .box-container{
+   margin-left: 1.7rem;
+   }
+  .packages .box-container .box {
+    width: 69vw;
+    height: 22rem;
+justify-content: center;
+align-items: center;
+  }
+  .packages .box-container .box .content{
+    width: 100%;
+    height: 100%;
+  }
+  .packages .box-container .box .content{
+    padding: 0.6rem;
+  }
+ 
+.packages .box-container .box .content .stars i {
+  font-size: 0.7rem;
+ 
+}
+.packages .box-container .box .content .price {
+  font-size: 0.8rem;
+}
+
+.packages .box-container .box .content .price span {
+  color: yellow;
+  font-size: 0.9rem;
+
+}
+.packages .box-container .box .content .btn4{
+  font-size: 10px;
+  padding: 4px;
+}
+
+  hr {
+    width: 21%;
+    position: relative;
+    top: 12px;
+  }
+  .footer .box-container{
+    display: flex;
+    flex-direction: row;
+ 
+  
+  }
+  .footer .box-container .box h3 {
+    font-size: 10px;
+  }
+.footer .box-container .upper-footer{
+  gap: 1.5rem;
+}
+.footer .box-container .box {
+  display: flex;
+  width: 15%;
+
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 1rem;
+
+}
+.footer .box-container .box a{
+font-size: 12px;
+}
+.footer .box-container .boxs p{
+  font-size: 12px;
+}
+
+
+.footer .credit{
+ font-size: 14px;
+}
+  .footer .box-container .boxs {
+    width: 29%;
+  }
+  .main .landpage{
+    height: 100vh;
+  }
+  .main .landpage .contents h3{
+    font-size: 18px;
+  }
+    .main .landpage .contents p{
+    font-size: 16px;
+  }
+
+    .main .landpage .contents a{
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .icons a
+{
+font-size: 11px;
+margin-top: 4px;
+}.icons i{
+  font-size: 14px;
+}
+.nav-r .log{
+  margin-top: 1px;
+}
 }

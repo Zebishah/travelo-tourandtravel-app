@@ -2,7 +2,7 @@ let slides = document.querySelectorAll(".contentss");
 let nav_ele = document.querySelectorAll(".nav-ele")
 let nav_bar = document.querySelector(".navbar")
 let sections = document.querySelectorAll('section')
-let fa_search = document.querySelector(".fa-search");
+let fa_search = document.querySelector(".fa-blog");
 let fa_bars = document.querySelector(".fa-bars");
 let search = document.querySelector(".search-bar")
 let a = -1;
@@ -77,15 +77,8 @@ ScrollReveal().reveal('.images,.stick', { origin: 'left' })
 ScrollReveal().reveal('.forms', { origin: 'right' })
 
 
-fa_search.addEventListener('click', () => {
-    search.classList.add('active')
-    fa_search.style.color = "white"
 
-})
-document.querySelector(".close").addEventListener('click', () => {
-    search.classList.remove('active')
-    fa_search.style.color = "yellow"
-})
+
 fa_bars.addEventListener('click', () => {
     nav_bar.classList.add('active')
 
