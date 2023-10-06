@@ -59,7 +59,9 @@ main {
     display: block;
     background-color: #333;
     color: yellow;
-    text-align: center;
+
+           justify-content: center;
+        align-items: center;
     text-decoration: none;
     padding: 0.5rem;
 margin-top: 3px;
@@ -80,9 +82,12 @@ footer {
 @media (max-width: 768px) {
     main {
         flex-direction: column;
+     justify-content: center;
+     align-items: center;
+       
     }
 
     .blog-post {
-        width: 100%;
+        width: 70%;
     }
 }
