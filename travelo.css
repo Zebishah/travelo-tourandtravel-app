@@ -976,7 +976,7 @@ hr {
   background-color: rgba(128, 128, 128, 0.199);
   border: none;
   overflow: hidden;
-  height: 30vh;
+  
 }
 
 #contact .row form .btn {
@@ -1663,6 +1663,7 @@ font-size: 20px;
 
   #contact .row form {
     width: 70vw;
+    height: auto;
   }
 
  
